@@ -454,9 +454,7 @@ lists all packages available."""
         write_version = name_length + version_length + 3 <= width
         write_latest = name_length + version_length + latest_length + 3 <= width
 
-        source_end_column = (
-            name_length + version_length + latest_length + source_length
-        )
+        source_end_column = name_length + version_length + latest_length + source_length
         write_source = show_source and (source_end_column + 3) <= width
         why_end_column = (
             name_length
